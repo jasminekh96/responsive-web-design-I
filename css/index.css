@@ -133,6 +133,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html,
@@ -280,11 +281,68 @@ footer {
 }
 @media screen and (max-width: 800px) {
 	body {
-		background-color: lightblue;
+		margin: 0 auto;
+		background-color: white;
+		flex-direction: column;
+	}
+	.logocont {
+		display: flex;
+		justify-content: center;
+	}
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	.cta {
+		background: white;
+		vertical-align: top;
+		margin-top: 6px;
+		padding: 8px 44px;
+		font-size: 17px;
+		cursor: pointer;
+		justify-content: center;
 	}
 }
 @media screen and (max-width: 500px) {
+	.logocont {
+		display: flex;
+		justify-content: center;
+	}
 	body {
-		background-color: orangered;
+		background-color: white;
+	}
+	.cta {
+		background: white;
+		vertical-align: top;
+		margin-top: 6px;
+		padding: 8px 44px;
+		font-size: 17px;
+		cursor: pointer;
+		justify-content: center;
+	}
+	header nav {
+		display: flex;
+		flex-direction: column;
+	}
+	header nav a {
+		text-align: center;
+		margin-right: 0;
+		border: 1px solid grey;
+		padding: 15px;
+	}
+	.main-content .top-content,
+	.main-content .bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.text-content {
+		padding-top: 30px;
+	}
+	.main-content .bottom-content .text-content {
+		width: 90%;
+	}
+	.container {
+		width: 95%;
 	}
 }
