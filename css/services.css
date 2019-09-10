@@ -1,0 +1,338 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+.services-header-img {
+	width: 100%;
+	margin-top: 25px;
+}
+
+body {
+	line-height: 1.25;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+h1 {
+	font-size: 25px;
+}
+.container {
+	width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+	border: none;
+}
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+}
+header nav {
+	display: flex;
+	justify-content: space-between;
+	vertical-align: top;
+}
+header nav a {
+	margin-right: 65px;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+}
+header nav a:hover {
+	text-decoration: underline;
+}
+header nav a:first-child {
+	margin-left: 0;
+}
+header nav a:last-child {
+	margin-right: 0;
+}
+header .logo {
+	margin-top: 40px;
+}
+#services {
+	margin-top: 25px;
+}
+#services {
+	margin-bottom: 25px;
+}
+#service-intro {
+	margin-bottom: 40px;
+}
+#services-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: none;
+}
+
+h2 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.child {
+	border: 1px solid black;
+	font-size: 14px;
+	padding: 20px;
+	margin-top: 25px;
+	background-color: #eee;
+	width: 48%;
+}
+.child button {
+	margin-top: 10px;
+	background: white;
+	border: black 1px solid;
+	padding: 7px 30px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+.factsline {
+	border: solid 1px black;
+}
+
+#facts-about {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.facts {
+	flex-direction: column;
+	width: 48%;
+	border: none;
+}
+.facts-image {
+	flex-direction: column;
+	border: none;
+	margin-left: 60px;
+}
+#bullet-list {
+	list-style-type: square;
+	list-style-position: inside;
+}
+ul {
+	padding: 0 90px 0 10px;
+}
+.bottom-p {
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+}
+@media screen and (max-width: 800px) {
+	body {
+		margin: 0 auto;
+		flex-direction: column;
+		background: orangered;
+	}
+	.container {
+		width: 95%;
+	}
+	#services {
+		vertical-align: top;
+		margin-top: 6px;
+		padding: 8px 44px;
+		font-size: 17px;
+		cursor: pointer;
+		justify-content: center;
+	}
+	.logocont {
+		display: flex;
+		justify-content: center;
+	}
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	header nav a {
+		color: black;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.logocont {
+		display: flex;
+		justify-content: center;
+	}
+	body {
+		background-color: lightblue;
+	}
+	#services {
+		background: white;
+		vertical-align: top;
+		margin-top: 6px;
+		padding: 8px 44px;
+		font-size: 17px;
+		cursor: pointer;
+		justify-content: center;
+	}
+	header nav {
+		display: flex;
+		flex-direction: column;
+	}
+	header nav a {
+		color: grey;
+		text-align: center;
+		margin-right: 0;
+		border: 1px solid grey;
+		padding: 15px;
+		background: white;
+	}
+	.container {
+		width: 95%;
+	}
+	#facts-about {
+		display: flex;
+		flex-direction: column;
+	}
+	.facts {
+		width: 100%;
+	}
+	ul {
+		padding: 0;
+	}
+	#bullet-list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 30%;
+	}
+}
